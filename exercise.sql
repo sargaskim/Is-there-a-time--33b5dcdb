@@ -4,7 +4,8 @@ CREATE TABLE planeten (
 naam varchar(10),
 diameter int(11),
 afstand BIGINT(225), 
-massa float(11)
+massa float(11),
+bezoek_datum YEAR
 );
 
 INSERT INTO planeten (naam, diameter, afstand, massa)
@@ -13,8 +14,10 @@ INSERT INTO planeten (naam, diameter, afstand, massa)
 VALUES('Mercurius', '4880', '57910000',	'0.1');
 INSERT INTO planeten (naam, diameter, afstand, massa)
 VALUES('Venus', '12104', '108208930', '0.9');
-INSERT INTO planeten (naam, diameter, afstand, massa)
-VALUES('Aarde', '12756', '149597870', '1');
+INSERT INTO planeten (naam, diameter, afstand, massa, bezoek_datum)
+VALUES('Aarde', '12756', '149597870', '1', '0000');
+INSERT INTO planeten (naam, diameter, afstand, massa, bezoek_datum)
+VALUES('Maan', '1737', '384400', '1.2', '1969');
 INSERT INTO planeten (naam, diameter, afstand, massa)
 VALUES('Mars','6794','227936640','0.1');
 INSERT INTO planeten (naam, diameter, afstand, massa)
